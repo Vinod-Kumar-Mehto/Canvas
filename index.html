@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        canvas{
+            border: 1px solid black;
+        }
+        body{
+            margin: 0;
+            
+            
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="Change">
+        <button type="reset" onclick="start()">Reset&Start</button>
+        <h2>Click for HSL</h2>
+        <label class="switch">
+            <input type="checkbox" id="myCheck">
+            <span class="slider"></span>
+        </label>
+        <label>Composite Style</label>
+        <select id="mode">
+            <option value="source-over">source-over</option>
+            <option value="source-in">source-in</option>
+            <option value="source-out">source-out</option>
+            <option value="destination-over">destination-over</option>
+            <option value="destination-in">destination-in</option>
+            <option value="destination-out">destination-out</option>
+            <option value="destination-atop">destination-atop</option>
+            <option value="lighter">lighter</option>
+            <option value="copy">copy</option>
+            <option value="xor">xor</option>
+            <option value="multiply">multiply</option>
+            <option value="screen">screen</option>
+            <option value="overlay">overlay</option>
+            <option value="darken">darken</option>
+            <option value="lighten">lighten</option>
+            <option value="color-dodge">color-dodge</option>
+            <option value="color-burn">color-burn</option>
+        </select>
+    <label for="Width">Selct Line Width</label>
+    <input type="range" value="50" name ="width">
+     <label for="base color">Select Color</label>
+    <input type="color" name ="base" value="#FF0000">
+</div>
+    <canvas width="1366" height="653"></canvas>
+    
+
+
+    <script src="index.js"></script>
+</body>
+</html>
